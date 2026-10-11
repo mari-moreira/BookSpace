@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "capa_url": "https://m.media-amazon.com/images/I/81pDk7HwimL._SL1462_.jpg",
+    "titulo": "O Segredo",
+    "autor": "Rhonda Byrne",
+    "avaliacao_media": 4.5,
+    "genero": "Autoajuda",
+    "ano_publicacao": 2006,
+    "total_avaliacoes": 1542,
+    "tags": ["Autoajuda", "Motivação", "Lei da Atração"],
+    "sinopse": "Fragmentos de um Grande Segredo foram encontrados nas tradições orais, na literatura, nas religiões e nas filosofias ao longo dos séculos. Pela primeira vez, todas as peças do Segredo se juntam numa revelação que transformará a vida de todos os que o vivenciarem.",
+    "estatisticas_rapidas": {
+      "paginas": 216,
+      "tempo_leitura_estimado": "3 horas",
+      "ano_publicacao": 2006
+    },
+    "detalhes_tecnicos": {
+      "editora": "Sextante",
+      "idioma": "Português",
+      "isbn_13": "978-8575422403",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1001,
+        "usuario": {
+          "id_usuario": 10,
+          "nome": "Mariana Costa",
+          "avatar_url": "https://ui-avatars.com/api/?name=Mariana+Costa&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-08-12T09:00:00Z",
+        "texto": "Mudou completamente a minha forma de pensar. Recomendo ler de mente aberta!",
+        "curtidas": 45
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "capa_url": "https://m.media-amazon.com/images/I/91VMhDELvhL._SL1500_.jpg",
+    "titulo": "Dona Flor e Seus Dois Maridos",
+    "autor": "Jorge Amado",
+    "avaliacao_media": 4.8,
+    "genero": "Romance Brasileiro",
+    "ano_publicacao": 1966,
+    "total_avaliacoes": 890,
+    "tags": ["Ficção Brasileira", "Clássico", "Romance"],
+    "sinopse": "Um dos romances mais conhecidos de Jorge Amado. Conta a história de Dona Flor, diretora da Escola de Culinária Sabor e Arte, que se vê dividida entre o amor de seus dois maridos: o malandro Vadinho, que volta como fantasma, e o recatado farmacêutico Teodoro.",
+    "estatisticas_rapidas": {
+      "paginas": 544,
+      "tempo_leitura_estimado": "9 horas",
+      "ano_publicacao": 1966
+    },
+    "detalhes_tecnicos": {
+      "editora": "Companhia das Letras",
+      "idioma": "Português",
+      "isbn_13": "978-8535911704",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1002,
+        "usuario": {
+          "id_usuario": 22,
+          "nome": "João Pedro",
+          "avatar_url": "https://ui-avatars.com/api/?name=Joao+Pedro&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-09-01T14:20:00Z",
+        "texto": "Um retrato maravilhoso da Bahia. A escrita do Jorge Amado é simplesmente envolvente.",
+        "curtidas": 112
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "capa_url": "https://m.media-amazon.com/images/I/41bwRryjXHL._SY445_SX342_QL70_ML2_.jpg",
+    "titulo": "Gabriela, Cravo e Canela",
+    "autor": "Jorge Amado",
+    "avaliacao_media": 4.7,
+    "genero": "Romance Brasileiro",
+    "ano_publicacao": 1958,
+    "total_avaliacoes": 765,
+    "tags": ["Ficção Brasileira", "Regionalismo", "Clássico"],
+    "sinopse": "A chegada da bela retirante Gabriela à cidade de Ilhéus, na Bahia, na década de 1920, transforma a vida do árabe Nacib e expõe as contradições de uma sociedade em transição entre o coronelismo e a modernidade.",
+    "estatisticas_rapidas": {
+      "paginas": 336,
+      "tempo_leitura_estimado": "6 horas",
+      "ano_publicacao": 1958
+    },
+    "detalhes_tecnicos": {
+      "editora": "Companhia das Letras",
+      "idioma": "Português",
+      "isbn_13": "978-8535920980",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1003,
+        "usuario": {
+          "id_usuario": 35,
+          "nome": "Luiza Silva",
+          "avatar_url": "https://ui-avatars.com/api/?name=Luiza+Silva&background=random&color=fff"
+        },
+        "nota": 4,
+        "data_publicacao": "2026-10-05T18:45:00Z",
+        "texto": "Personagens icónicos! Um livro que te transporta para outra época.",
+        "curtidas": 30
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "capa_url": "https://m.media-amazon.com/images/I/51Pw06uU8FL._SY445_SX342_ML2_.jpg",
+    "titulo": "O Poder do Hábito",
+    "autor": "Charles Duhigg",
+    "avaliacao_media": 4.8,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2012,
+    "total_avaliacoes": 5430,
+    "tags": ["Produtividade", "Psicologia", "Hábitos"],
+    "sinopse": "Charles Duhigg, repórter investigativo do New York Times, mostra que a chave para o sucesso é entender como os hábitos funcionam. O livro explora a ciência por trás da criação e transformação de hábitos na vida pessoal e nos negócios.",
+    "estatisticas_rapidas": {
+      "paginas": 408,
+      "tempo_leitura_estimado": "7 horas",
+      "ano_publicacao": 2012
+    },
+    "detalhes_tecnicos": {
+      "editora": "Objetiva",
+      "idioma": "Português",
+      "isbn_13": "978-8539004119",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1004,
+        "usuario": {
+          "id_usuario": 42,
+          "nome": "Rafael Alves",
+          "avatar_url": "https://ui-avatars.com/api/?name=Rafael+Alves&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-07-22T11:10:00Z",
+        "texto": "O conceito do 'loop do hábito' (deixa, rotina, recompensa) aplicou-se perfeitamente na minha rotina de estudos de programação.",
+        "curtidas": 89
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "capa_url": "https://m.media-amazon.com/images/I/31UMc+koZKL._SX342_SY445_ML2_.jpg",
+    "titulo": "Seja Foda!",
+    "autor": "Caio Carneiro",
+    "avaliacao_media": 4.6,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2017,
+    "total_avaliacoes": 2100,
+    "tags": ["Motivação", "Empreendedorismo", "Carreira"],
+    "sinopse": "Aprenda comportamentos e atitudes necessários para conquistar resultados incríveis em todos os âmbitos da sua vida. O livro foca em como ter uma mentalidade vencedora e inspirar outras pessoas.",
+    "estatisticas_rapidas": {
+      "paginas": 208,
+      "tempo_leitura_estimado": "3 horas",
+      "ano_publicacao": 2017
+    },
+    "detalhes_tecnicos": {
+      "editora": "Buzz Editora",
+      "idioma": "Português",
+      "isbn_13": "978-8593156267",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1005,
+        "usuario": {
+          "id_usuario": 51,
+          "nome": "Lucas Ferreira",
+          "avatar_url": "https://ui-avatars.com/api/?name=Lucas+Ferreira&background=random&color=fff"
+        },
+        "nota": 4,
+        "data_publicacao": "2026-05-18T16:05:00Z",
+        "texto": "Muito motivacional, ideal para ler quando se precisa de um empurrão para começar um projeto novo.",
+        "curtidas": 15
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "capa_url": "https://m.media-amazon.com/images/I/41yhKukxXiL._SY445_SX342_ML2_.jpg",
+    "titulo": "Como Fazer Amigos e Influenciar Pessoas",
+    "autor": "Dale Carnegie",
+    "avaliacao_media": 4.9,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 1936,
+    "total_avaliacoes": 8500,
+    "tags": ["Comunicação", "Liderança", "Psicologia"],
+    "sinopse": "Um dos maiores clássicos de todos os tempos. Os princípios de Dale Carnegie ajudam o leitor a melhorar os seus relacionamentos pessoais e profissionais, através de técnicas simples e eficazes de comunicação e empatia.",
+    "estatisticas_rapidas": {
+      "paginas": 256,
+      "tempo_leitura_estimado": "4 horas",
+      "ano_publicacao": 1936
+    },
+    "detalhes_tecnicos": {
+      "editora": "Companhia Editora Nacional",
+      "idioma": "Português",
+      "isbn_13": "978-8504020361",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1006,
+        "usuario": {
+          "id_usuario": 8,
+          "nome": "Camila Borges",
+          "avatar_url": "https://ui-avatars.com/api/?name=Camila+Borges&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-09-20T20:30:00Z",
+        "texto": "Este livro deveria ser obrigatório em todas as escolas. Mudou a forma como interajo na faculdade e no trabalho.",
+        "curtidas": 204
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "capa_url": "https://m.media-amazon.com/images/I/51UjO3YMafL._SY445_SX342_ML2_.jpg",
+    "titulo": "Pai Rico, Pai Pobre",
+    "autor": "Robert T. Kiyosaki",
+    "avaliacao_media": 4.8,
+    "genero": "Finanças Pessoais",
+    "ano_publicacao": 1997,
+    "total_avaliacoes": 6200,
+    "tags": ["Educação Financeira", "Investimentos", "Economia"],
+    "sinopse": "O livro desconstrói o mito de que é preciso ter um rendimento elevado para ser rico e explica a diferença entre trabalhar pelo dinheiro e fazer o dinheiro trabalhar para si.",
+    "estatisticas_rapidas": {
+      "paginas": 336,
+      "tempo_leitura_estimado": "5 horas",
+      "ano_publicacao": 1997
+    },
+    "detalhes_tecnicos": {
+      "editora": "Alta Books",
+      "idioma": "Português",
+      "isbn_13": "978-8550801483",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1007,
+        "usuario": {
+          "id_usuario": 77,
+          "nome": "Felipe Gomes",
+          "avatar_url": "https://ui-avatars.com/api/?name=Felipe+Gomes&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-03-11T13:40:00Z",
+        "texto": "Conceitos fundamentais de ativos vs passivos explicados de forma brilhante.",
+        "curtidas": 56
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "capa_url": "https://m.media-amazon.com/images/I/51KP4VQOF1L._SY445_SX342_ML2_.jpg",
+    "titulo": "A Sutil Arte de Ligar o F*da-se",
+    "autor": "Mark Manson",
+    "avaliacao_media": 4.6,
+    "genero": "Autoajuda",
+    "ano_publicacao": 2016,
+    "total_avaliacoes": 4800,
+    "tags": ["Comportamento", "Humor", "Filosofia"],
+    "sinopse": "Uma abordagem franca e contraintuitiva para viver uma boa vida. O autor argumenta que os seres humanos são falhos e limitados e propõe que encontremos a coragem de aceitar as nossas imperfeições.",
+    "estatisticas_rapidas": {
+      "paginas": 224,
+      "tempo_leitura_estimado": "3.5 horas",
+      "ano_publicacao": 2016
+    },
+    "detalhes_tecnicos": {
+      "editora": "Intrínseca",
+      "idioma": "Português",
+      "isbn_13": "978-8551002490",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1008,
+        "usuario": {
+          "id_usuario": 19,
+          "nome": "Bruno Martins",
+          "avatar_url": "https://ui-avatars.com/api/?name=Bruno+Martins&background=random&color=fff"
+        },
+        "nota": 4,
+        "data_publicacao": "2026-06-08T08:15:00Z",
+        "texto": "Uma leitura leve, mas com reflexões pesadas sobre prioridades e expectativas.",
+        "curtidas": 41
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "capa_url": "https://m.media-amazon.com/images/I/51cF7jnQGBS._SY445_SX342_ML2_.jpg",
+    "titulo": "O Alquimista",
+    "autor": "Paulo Coelho",
+    "avaliacao_media": 4.7,
+    "genero": "Ficção",
+    "ano_publicacao": 1988,
+    "total_avaliacoes": 9100,
+    "tags": ["Fantasia", "Espiritualidade", "Aventura"],
+    "sinopse": "A mágica história de Santiago, um jovem pastor andaluz que viaja da sua terra natal para o deserto egípcio em busca de um tesouro oculto perto das Pirâmides, aprendendo a ouvir o seu coração ao longo do caminho.",
+    "estatisticas_rapidas": {
+      "paginas": 208,
+      "tempo_leitura_estimado": "3 horas",
+      "ano_publicacao": 1988
+    },
+    "detalhes_tecnicos": {
+      "editora": "Paralela",
+      "idioma": "Português",
+      "isbn_13": "978-8584390588",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1009,
+        "usuario": {
+          "id_usuario": 91,
+          "nome": "Sofia Almeida",
+          "avatar_url": "https://ui-avatars.com/api/?name=Sofia+Almeida&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-08-30T17:22:00Z",
+        "texto": "Lindo! Uma metáfora maravilhosa sobre seguir os nossos sonhos.",
+        "curtidas": 133
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "capa_url": "https://m.media-amazon.com/images/I/512zQ6qXkML._SL1000_.jpg",
+    "titulo": "O Milagre da Manhã",
+    "autor": "Hal Elrod",
+    "avaliacao_media": 4.7,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2012,
+    "total_avaliacoes": 3200,
+    "tags": ["Rotina", "Produtividade", "Hábito"],
+    "sinopse": "Conheça o método simples e eficaz que vai proporcionar a vida dos sonhos, antes das 8 horas da manhã. O autor apresenta os benefícios de acordar cedo e desenvolver todo o seu potencial e as suas habilidades.",
+    "estatisticas_rapidas": {
+      "paginas": 196,
+      "tempo_leitura_estimado": "3 horas",
+      "ano_publicacao": 2012
+    },
+    "detalhes_tecnicos": {
+      "editora": "BestSeller",
+      "idioma": "Português",
+      "isbn_13": "978-8576849940",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1010,
+        "usuario": {
+          "id_usuario": 66,
+          "nome": "Pedro Carvalho",
+          "avatar_url": "https://ui-avatars.com/api/?name=Pedro+Carvalho&background=random&color=fff"
+        },
+        "nota": 4,
+        "data_publicacao": "2026-02-15T06:30:00Z",
+        "texto": "Difícil de implementar nos primeiros dias, mas a rotina de leitura e meditação matinal ajudam muito no foco diário.",
+        "curtidas": 28
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "capa_url": "https://m.media-amazon.com/images/I/718UG0KPHpL._SL1457_.jpg",
+    "titulo": "Fundamentos da Arquitetura de Software",
+    "autor": "Mark Richards e Neal Ford",
+    "avaliacao_media": 4.8,
+    "genero": "Tecnologia",
+    "ano_publicacao": 2020,
+    "total_avaliacoes": 342,
+    "tags": ["Programação", "Engenharia de Software", "Sistemas"],
+    "sinopse": "Não há regras simples para a criação de arquiteturas de software. Em vez disso, a arquitetura de software é um processo contínuo de tomada de decisões críticas. Este guia prático oferece uma visão abrangente dos padrões, princípios e práticas modernos.",
+    "estatisticas_rapidas": {
+      "paginas": 432,
+      "tempo_leitura_estimado": "8 horas",
+      "ano_publicacao": 2020
+    },
+    "detalhes_tecnicos": {
+      "editora": "Novatec Editora",
+      "idioma": "Português",
+      "isbn_13": "978-8575228067",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1011,
+        "usuario": {
+          "id_usuario": 84,
+          "nome": "Carlos Mendes",
+          "avatar_url": "https://ui-avatars.com/api/?name=Carlos+Mendes&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-09-15T10:30:00Z",
+        "texto": "Excelente material de referência. A parte sobre trade-offs arquiteturais ajuda muito a estruturar o código em projetos reais.",
+        "curtidas": 24
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "capa_url": "https://m.media-amazon.com/images/I/61aIS4n2jZL._SY466_.jpg",
+    "titulo": "Domain-Driven Design: Atacando as Complexidades no Coração do Software",
+    "autor": "Eric Evans",
+    "avaliacao_media": 4.7,
+    "genero": "Tecnologia",
+    "ano_publicacao": 2003,
+    "total_avaliacoes": 510,
+    "tags": ["Engenharia de Software", "Design de Software", "Programação Avançada"],
+    "sinopse": "Um livro clássico e fundamental para a comunidade de desenvolvimento. Eric Evans ensina como usar modelos de domínio para tornar o desenvolvimento de software corporativo complexo mais gerenciável e alinhado ao negócio.",
+    "estatisticas_rapidas": {
+      "paginas": 528,
+      "tempo_leitura_estimado": "12 horas",
+      "ano_publicacao": 2003
+    },
+    "detalhes_tecnicos": {
+      "editora": "Alta Books",
+      "idioma": "Português",
+      "isbn_13": "978-8550800653",
+      "formato": "Capa comum"
+    },
+    "comentarios": [
+      {
+        "id_comentario": 1012,
+        "usuario": {
+          "id_usuario": 102,
+          "nome": "Ana Beatriz",
+          "avatar_url": "https://ui-avatars.com/api/?name=Ana+Beatriz&background=random&color=fff"
+        },
+        "nota": 5,
+        "data_publicacao": "2026-10-02T14:15:00Z",
+        "texto": "Apesar de ser de 2003, os conceitos aplicam-se a qualquer arquitetura moderna. Uma leitura densa, mas que vale cada página.",
+        "curtidas": 42
+      }
+    ]
+  }
+]

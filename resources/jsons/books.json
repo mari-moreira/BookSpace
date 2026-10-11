@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "capa_url": "https://m.media-amazon.com/images/I/81pDk7HwimL._SL1462_.jpg",
+    "titulo": "O Segredo",
+    "autor": "Rhonda Byrne",
+    "avaliacao_media": 4.5,
+    "genero": "Autoajuda",
+    "ano_publicacao": 2006
+  },
+  {
+    "id": 2,
+    "capa_url": "https://m.media-amazon.com/images/I/91VMhDELvhL._SL1500_.jpg",
+    "titulo": "Dona Flor e Seus Dois Maridos",
+    "autor": "Jorge Amado",
+    "avaliacao_media": 4.8,
+    "genero": "Romance Brasileiro",
+    "ano_publicacao": 1966
+  },
+  {
+    "id": 3,
+    "capa_url": "https://m.media-amazon.com/images/I/41bwRryjXHL._SY445_SX342_QL70_ML2_.jpg",
+    "titulo": "Gabriela, Cravo e Canela",
+    "autor": "Jorge Amado",
+    "avaliacao_media": 4.7,
+    "genero": "Romance Brasileiro",
+    "ano_publicacao": 1958
+  },
+  {
+    "id": 4,
+    "capa_url": "https://m.media-amazon.com/images/I/51Pw06uU8FL._SY445_SX342_ML2_.jpg",
+    "titulo": "O Poder do Hábito",
+    "autor": "Charles Duhigg",
+    "avaliacao_media": 4.8,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2012
+  },
+  {
+    "id": 5,
+    "capa_url": "https://m.media-amazon.com/images/I/31UMc+koZKL._SX342_SY445_ML2_.jpg",
+    "titulo": "Seja Foda!",
+    "autor": "Caio Carneiro",
+    "avaliacao_media": 4.6,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2017
+  },
+  {
+    "id": 6,
+    "capa_url": "https://m.media-amazon.com/images/I/41yhKukxXiL._SY445_SX342_ML2_.jpg",
+    "titulo": "Como Fazer Amigos e Influenciar Pessoas",
+    "autor": "Dale Carnegie",
+    "avaliacao_media": 4.9,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 1936
+  },
+  {
+    "id": 7,
+    "capa_url": "https://m.media-amazon.com/images/I/51UjO3YMafL._SY445_SX342_ML2_.jpg",
+    "titulo": "Pai Rico, Pai Pobre",
+    "autor": "Robert T. Kiyosaki",
+    "avaliacao_media": 4.8,
+    "genero": "Finanças Pessoais",
+    "ano_publicacao": 1997
+  },
+  {
+    "id": 8,
+    "capa_url": "https://m.media-amazon.com/images/I/51KP4VQOF1L._SY445_SX342_ML2_.jpg",
+    "titulo": "A Sutil Arte de Ligar o F*da-se",
+    "autor": "Mark Manson",
+    "avaliacao_media": 4.6,
+    "genero": "Autoajuda",
+    "ano_publicacao": 2016
+  },
+  {
+    "id": 9,
+    "capa_url": "https://m.media-amazon.com/images/I/51cF7jnQGBS._SY445_SX342_ML2_.jpg",
+    "titulo": "O Alquimista",
+    "autor": "Paulo Coelho",
+    "avaliacao_media": 4.7,
+    "genero": "Ficção",
+    "ano_publicacao": 1988
+  },
+  {
+    "id": 10,
+    "capa_url": "https://m.media-amazon.com/images/I/512zQ6qXkML._SL1000_.jpg",
+    "titulo": "O Milagre da Manhã",
+    "autor": "Hal Elrod",
+    "avaliacao_media": 4.7,
+    "genero": "Desenvolvimento Pessoal",
+    "ano_publicacao": 2012
+  },
+  {
+    "id": 11,
+    "capa_url": "https://m.media-amazon.com/images/I/718UG0KPHpL._SL1457_.jpg",
+    "titulo": "Fundamentos da Arquitetura de Software",
+    "autor": "Mark Richards e Neal Ford",
+    "avaliacao_media": 4.8,
+    "genero": "Tecnologia",
+    "ano_publicacao": 2020
+  },
+  {
+    "id": 12,
+    "capa_url": "https://m.media-amazon.com/images/I/61aIS4n2jZL._SY466_.jpg",
+    "titulo": "Domain-Driven Design: Atacando as Complexidades no Coração do Software",
+    "autor": "Eric Evans",
+    "avaliacao_media": 4.7,
+    "genero": "Tecnologia",
+    "ano_publicacao": 2003
+  }
+]
