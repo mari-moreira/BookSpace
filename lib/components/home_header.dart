@@ -1,9 +1,10 @@
 import 'package:book_space/core/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:book_space/core/usuario.dart';
 
 /// Cabeçalho da Tela 1.
-/// Normal: logo à esquerda e lupa à direita.
+/// Normal: logo à esquerda, lupa e ícone de login à direita.
 /// Buscando: campo de texto no lugar da logo e um X no lugar da lupa.
 class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
   const HomeHeader({
@@ -12,12 +13,16 @@ class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
     this.onSearchTap,
     this.onSearchClose,
     this.onSearchChanged,
+    this.usuario,
+    this.onLoginTap,
   });
 
   final bool isSearching; // true = campo de busca aberto
   final VoidCallback? onSearchTap; // tocou na lupa
   final VoidCallback? onSearchClose; // tocou no X
   final ValueChanged<String>? onSearchChanged; // o texto digitado mudou
+  final Usuario? usuario; // null = ninguém logado
+  final VoidCallback? onLoginTap; // tocou no ícone de login/logout
 
   @override
   Size get preferredSize => const Size.fromHeight(64);
@@ -40,6 +45,15 @@ class HomeHeader extends StatelessWidget implements PreferredSizeWidget {
           ),
           tooltip: isSearching ? 'Fechar busca' : 'Pesquisar',
           onPressed: isSearching ? onSearchClose : onSearchTap,
+        ),
+        // Login (deslogada) / conta (logada). Tocar alterna entrar e sair.
+        IconButton(
+          icon: Icon(
+            usuario == null ? Icons.login : Icons.account_circle,
+            color: AppColors.third,
+          ),
+          tooltip: usuario == null ? 'Entrar' : 'Sair',
+          onPressed: onLoginTap,
         ),
         const SizedBox(width: 8),
       ],

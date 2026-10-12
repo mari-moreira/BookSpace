@@ -8,6 +8,9 @@ import 'package:book_space/core/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:book_space/screens/book_detail_screen.dart';
+import 'package:book_space/core/autenticador.dart';
+import 'package:book_space/core/usuario.dart';
+import 'package:book_space/screens/favorites_screen.dart';
 
 /// Tela 1: cabeçalho + filtros de categoria + grade de livros + rodapé.
 class HomeScreen extends StatefulWidget {
@@ -18,6 +21,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  //usuário
+  Usuario? usuario;
   // Todos os livros do JSON
   List<dynamic> books = [];
 
@@ -76,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    carregarUsuario();
     loadBooks();
   }
 
@@ -98,6 +104,31 @@ class _HomeScreenState extends State<HomeScreen> {
         isLoading = false;
       });
     }
+  }
+
+  //CARREGAR USUÁRIO
+  Future<void> carregarUsuario() async {
+    final u = await Autenticador.recuperarUsuario();
+    if (!mounted) return;
+    setState(() => usuario = u);
+  }
+
+  Future<void> onLoginTap() async {
+    if (usuario == null) {
+      final u = await Autenticador.login();
+      if (!mounted) return;
+      setState(() => usuario = u);
+      aviso('Olá, ${u!.nome}!');
+    } else {
+      await Autenticador.logout();
+      if (!mounted) return;
+      setState(() => usuario = null);
+      aviso('Você saiu da conta.');
+    }
+  }
+
+  void aviso(String texto) {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(texto)));
   }
 
   @override
@@ -129,6 +160,10 @@ class _HomeScreenState extends State<HomeScreen> {
             searchText = text;
           });
         },
+
+        // NOVO: entrega o usuário e a função do ícone de login
+        usuario: usuario,
+        onLoginTap: onLoginTap,
       ),
 
       body: buildContent(),
@@ -148,10 +183,19 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {
               isSearching = true;
             });
+          } else if (index == 2) {
+            // NOVO: Favoritos (só para quem está logada)
+            if (usuario == null) {
+              aviso('Faça login para ver seus favoritos.');
+              return;
+            }
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const FavoritesScreen()),
+            );
           } else {
-            // Favoritos e perfil ainda não existem.
-            ScaffoldMessenger.of(context)
-                .showSnackBar(const SnackBar(content: Text('Tela em breve!')));
+            // Perfil ainda não existe.
+            aviso('Tela em breve!');
           }
         },
       ),
