@@ -7,6 +7,7 @@ import 'package:book_space/components/home_header.dart';
 import 'package:book_space/core/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:book_space/screens/book_detail_screen.dart';
 
 /// Tela 1: cabeçalho + filtros de categoria + grade de livros + rodapé.
 class HomeScreen extends StatefulWidget {
@@ -23,23 +24,24 @@ class _HomeScreenState extends State<HomeScreen> {
   // true enquanto o JSON está sendo lido
   bool isLoading = true;
 
-  // guarda a mensagem de erro, se algo der errado (null = tudo certo)
+  // Guarda a mensagem de erro
   String? errorMessage;
 
-  // categoria escolhida no filtro
+  // Categoria escolhida no filtro
   String selectedCategory = 'Todos';
 
-  // busca: campo aberto? e o que foi digitado
+  // Estado da busca
   bool isSearching = false;
   String searchText = '';
 
-  /// Categorias montadas a partir do JSON (sem repetir), com "Todos" na frente.
+  /// Categorias montadas a partir do JSON, sem repetição.
   List<String> get categories {
     final genres = books.map((book) => book['genero'] as String).toSet();
+
     return ['Todos', ...genres];
   }
 
-  /// Livros que aparecem na tela: respeitam a categoria E o texto da busca.
+  /// Filtra os livros por categoria e texto da busca.
   List<dynamic> get filteredBooks {
     final query = normalize(searchText.trim());
 
@@ -49,39 +51,39 @@ class _HomeScreenState extends State<HomeScreen> {
 
       final matchesSearch =
           query.isEmpty ||
-          normalize(book['titulo']).contains(query) ||
-          normalize(book['autor']).contains(query) ||
-          normalize(book['genero']).contains(query);
+          normalize(book['titulo'].toString()).contains(query) ||
+          normalize(book['autor'].toString()).contains(query) ||
+          normalize(book['genero'].toString()).contains(query);
 
       return matchesCategory && matchesSearch;
     }).toList();
   }
 
-  /// Deixa o texto em minúsculas e sem acento, para "habito" achar "Hábito".
+  /// Deixa o texto em minúsculas e remove os acentos mais comuns.
   String normalize(String text) {
     const from = 'áàâãäéèêëíìîïóòôõöúùûüç';
     const to = 'aaaaaeeeeiiiiooooouuuuc';
+
     var result = text.toLowerCase();
+
     for (var i = 0; i < from.length; i++) {
       result = result.replaceAll(from[i], to[i]);
     }
+
     return result;
   }
 
   @override
   void initState() {
     super.initState();
-    loadBooks(); // roda uma vez quando a tela nasce
+    loadBooks();
   }
 
+  /// Carrega os livros do arquivo JSON.
   Future<void> loadBooks() async {
     try {
-      // 1. Lê o arquivo como texto
       final text = await rootBundle.loadString('resources/jsons/books.json');
-      // (Só para testar a bolinha: tire o // da linha abaixo para simular demora)
-      // await Future.delayed(const Duration(seconds: 2));
 
-      // 2. Converte o texto em lista
       final data = jsonDecode(text);
 
       setState(() {
@@ -90,6 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
       });
     } catch (e) {
       debugPrint('Erro ao carregar livros: $e');
+
       setState(() {
         errorMessage = e.toString();
         isLoading = false;
@@ -101,46 +104,52 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.surface,
+
       appBar: HomeHeader(
         isSearching: isSearching,
-        // Tocou na lupa: abre o campo de busca
+
+        // Abre o campo de busca.
         onSearchTap: () {
           setState(() {
             isSearching = true;
           });
         },
-        // Tocou no X: fecha o campo e limpa o texto
+
+        // Fecha a busca e limpa o texto.
         onSearchClose: () {
           setState(() {
             isSearching = false;
             searchText = '';
           });
         },
-        // Digitou algo: guarda o texto e a lista se atualiza
+
+        // Atualiza o texto da busca.
         onSearchChanged: (text) {
           setState(() {
             searchText = text;
           });
         },
       ),
+
       body: buildContent(),
+
       bottomNavigationBar: AppBottomNav(
-        // Busca fica destacada enquanto o campo de busca está aberto
         currentIndex: isSearching ? 1 : 0,
+
         onTap: (index) {
           if (index == 0) {
-            // Início: fecha a busca e limpa o texto
+            // Início
             setState(() {
               isSearching = false;
               searchText = '';
             });
           } else if (index == 1) {
-            // Busca: abre o campo de busca (igual à lupa)
+            // Busca
             setState(() {
               isSearching = true;
             });
           } else {
-            // Favoritos e Perfil ainda não existem
+            // Favoritos e perfil ainda não existem.
             ScaffoldMessenger.of(context)
                 .showSnackBar(const SnackBar(content: Text('Tela em breve!')));
           }
@@ -149,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  /// Decide o que mostrar: bolinha, erro ou (filtros + grade).
+  /// Decide o que mostrar: carregamento, erro ou grade de livros.
   Widget buildContent() {
     if (isLoading) {
       return const Center(
@@ -181,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
 
-        // Grade de livros (já filtrados) ou aviso de "nada encontrado"
+        // Grade de livros ou mensagem de lista vazia
         Expanded(
           child: filteredBooks.isEmpty
               ? const Center(
@@ -193,14 +202,30 @@ class _HomeScreenState extends State<HomeScreen> {
               : GridView.builder(
                   padding: const EdgeInsets.all(16),
                   itemCount: filteredBooks.length,
+
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
                     childAspectRatio: 0.65,
                   ),
-                  itemBuilder: (context, index) =>
-                      BookCard(book: filteredBooks[index]),
+
+                  itemBuilder: (context, index) {
+                    final book = filteredBooks[index];
+
+                    return BookCard(
+                      book: book,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) =>
+                                BookDetailScreen(bookId: book['id']),
+                          ),
+                        );
+                      },
+                    );
+                  },
                 ),
         ),
       ],
